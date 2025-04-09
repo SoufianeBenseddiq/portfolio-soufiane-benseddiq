@@ -28,12 +28,8 @@ import { LinkButtonComponent } from '@shared/components/link-button/link-button.
     </section>
   `,
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent {
   private mainService = inject(MainService);
   experiences: Experience[] = [];
-  ngOnInit() {
-    this.mainService
-      .getExperience()
-      .subscribe((data) => (this.experiences = data));
-  }
+
 }

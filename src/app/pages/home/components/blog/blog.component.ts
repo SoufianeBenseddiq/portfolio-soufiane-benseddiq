@@ -33,12 +33,10 @@ import { LinkButtonComponent } from '@shared/components/link-button/link-button.
     </section>
   `,
 })
-export class BlogComponent implements OnInit {
+export class BlogComponent {
   private mainService = inject(MainService);
 
   posts: Post[] = [];
 
-  ngOnInit() {
-    this.mainService.getPosts().subscribe((posts) => (this.posts = posts));
-  }
+
 }

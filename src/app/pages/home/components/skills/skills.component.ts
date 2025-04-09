@@ -21,11 +21,9 @@ import { MainService } from '@shared/services/main.service';
     </section>
   `,
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent {
   private mainService = inject(MainService);
   skills: string[] = [];
 
-  ngOnInit() {
-    this.mainService.getSkills().subscribe((data) => (this.skills = data));
-  }
+
 }
