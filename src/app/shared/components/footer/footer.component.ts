@@ -23,12 +23,12 @@ import { FileIconComponent } from '../file-icon/file-icon.component';
         <section class="flex items-center gap-3">
           <div class="avatar"></div>
           <a routerLink="/" class="text-lg font-semibold"
-            >Uriel Spiridione | Uspiri</a
+            >Soufiane Benseddiq</a
           >
         </section>
         <section class="media flex items-center gap-4">
           <a
-            href="https://github.com/USpiri/"
+            href="https://github.com/SoufianeBenseddiq"
             target="_blank"
             title="Github Page"
             rel="noopener noreferrer"
@@ -36,25 +36,25 @@ import { FileIconComponent } from '../file-icon/file-icon.component';
             <app-github-icon class="h-4" />
           </a>
           <a
-            href="https://www.linkedin.com/in/urielspiridione/"
+            href="https://www.linkedin.com/in/soufiane-benseddiq-3755491a8/"
             target="_blank"
             title="Linkedin"
             rel="noopener noreferrer"
           >
             <app-linkedin-icon class="h-4" />
           </a>
+<!--          <a-->
+<!--            href="https://twitter.com/UrielSpiridione"-->
+<!--            target="_blank"-->
+<!--            title="X Twitter"-->
+<!--            rel="noopener noreferrer"-->
+<!--          >-->
+<!--            <app-x-icon class="h-4" />-->
+<!--          </a>-->
           <a
-            href="https://twitter.com/UrielSpiridione"
+            href="/assets/CV-SoufianeBenseddiq.pdf"
             target="_blank"
-            title="X Twitter"
-            rel="noopener noreferrer"
-          >
-            <app-x-icon class="h-4" />
-          </a>
-          <a
-            href="https://cv.uspiri.com"
-            target="_blank"
-            title="Uriel Spiridione Curriculum"
+            title="Soufiane Benseddiq"
             rel="noopener noreferrer"
           >
             <app-file-icon class="h-4" />
@@ -63,7 +63,7 @@ import { FileIconComponent } from '../file-icon/file-icon.component';
       </div>
       <p class="text-center text-sm">
         &copy; {{ year }}
-        <span class="font-semibold"> Uriel Spiridione</span>
+        <span class="font-semibold"> Soufiane Benseddiq</span>
       </p>
     </footer>
   `,

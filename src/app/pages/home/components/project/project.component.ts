@@ -26,7 +26,7 @@ import { Project } from 'src/app/models/project.interface';
         <h3
           class="text-nowrap text-xl font-semibold transition-all md:text-2xl"
         >
-          {{ project.name }}
+          {{ project.title }}
         </h3>
         <ul class="flex flex-wrap gap-3">
           @for (tag of project.tags; track $index) {
@@ -41,18 +41,18 @@ import { Project } from 'src/app/models/project.interface';
       </p>
       <footer class="flex gap-2">
         @if (project.url) {
-          <app-link-button [href]="project.url" title="{{ project.name }} page">
+          <app-link-button [href]="project.url" title="{{ project.title }} page">
             <app-link-icon class="h-4 w-4" />
           </app-link-button>
         }
-        @if (project.repo) {
-          <app-link-button
-            [href]="project.repo"
-            title="{{ project.name }} repository"
-          >
-            <app-github-icon class="h-4 w-4" />
-          </app-link-button>
-        }
+<!--        @if (project.repo) {-->
+<!--          <app-link-button-->
+<!--            [href]="project.repo"-->
+<!--            title="{{ project.title }} repository"-->
+<!--          >-->
+<!--            <app-github-icon class="h-4 w-4" />-->
+<!--          </app-link-button>-->
+<!--        }-->
       </footer>
     </article>
   `,

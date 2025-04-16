@@ -1,11 +1,8 @@
 export interface Experience {
-  company: string;
-  location: string;
+  title: string;
+  type?: string; // Project / Internship / Academic
+  techStack: string[];
   description: string;
-  position: string;
-  url?: string;
-  startDate: string;
-  endDate: string;
-  remote: boolean;
-  highlights: string[];
+  company: string;
+  date?: string;
 }

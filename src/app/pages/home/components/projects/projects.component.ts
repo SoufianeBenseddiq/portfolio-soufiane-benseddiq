@@ -21,9 +21,11 @@ import { MainService } from '@shared/services/main.service';
     </section>
   `,
 })
-export class ProjectsComponent  {
+export class ProjectsComponent implements OnInit{
   private mainService = inject(MainService);
   projects: Project[] = [];
 
-
+  ngOnInit(): void {
+    this.projects = this.mainService.experiences()
+  }
 }

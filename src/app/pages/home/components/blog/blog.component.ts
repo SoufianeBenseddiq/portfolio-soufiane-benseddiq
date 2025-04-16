@@ -13,7 +13,7 @@ import { LinkButtonComponent } from '@shared/components/link-button/link-button.
     <section id="blog">
       <hgroup class="flex items-baseline gap-2">
         <app-title>Blog</app-title>
-        <span class="text-xs font-semibold text-neutral-400">(Spanish)</span>
+        <span class="text-xs font-semibold text-neutral-400">(coming soon...)</span>
       </hgroup>
       <ul
         class="mt-10 flex flex-col justify-center gap-3 md:flex-row md:flex-wrap"
@@ -24,12 +24,6 @@ import { LinkButtonComponent } from '@shared/components/link-button/link-button.
           </li>
         }
       </ul>
-      <app-link-button
-        href="https://blog.uspiri.com"
-        btnStyle="base"
-        class="mt-8 flex underline"
-        >Read more...</app-link-button
-      >
     </section>
   `,
 })
