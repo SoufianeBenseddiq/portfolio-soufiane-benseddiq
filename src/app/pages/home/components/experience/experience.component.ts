@@ -3,12 +3,13 @@ import { Experience } from 'src/app/models/experience.interface';
 import { ExperienceCardComponent } from '../experience-card/experience-card.component';
 import { TitleComponent } from '@shared/components/title/title.component';
 import { MainService } from '@shared/services/main.service';
-import { LinkButtonComponent } from '@shared/components/link-button/link-button.component';
+import { LinkButtonComponent } from '@shared/components/link-button/link-button.component'
+import { CommonModule } from "@angular/common";
 
 @Component({
   selector: 'app-experience',
   standalone: true,
-  imports: [ExperienceCardComponent, TitleComponent, LinkButtonComponent],
+  imports: [ExperienceCardComponent, TitleComponent, LinkButtonComponent, CommonModule],
   template: `
     <section id="experience" class="py-12">
       <app-title>Experience</app-title>
